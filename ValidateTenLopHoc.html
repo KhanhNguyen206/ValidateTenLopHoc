@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ValidTenLopHoc</title>
+</head>
+<body>
+<script>
+    function isNameClass(str) {
+        let regexp= /^[CAP]{1}[0-9]{4}[GHIKLM]{1}$/;
+        if(regexp.test(str)){
+            return "Đây là tên lớp học hợp lệ";
+        }else {
+            return "Đây không phải là tên lớp học hợp lệ";
+        }
+    }
+
+    console.log(isNameClass("C0318G"));
+    console.log(isNameClass("M0318G"));
+    console.log(isNameClass("P0323A"));
+</script>
+</body>
+</html>
